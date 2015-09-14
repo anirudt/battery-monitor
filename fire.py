@@ -5,11 +5,11 @@ import os
 This script checks if the battery percentage is lesser
 than 20%, and reminds the user to charge the laptop using a voice automated system.
 '''
-cmd1 = "upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep percentage | awk '{print $2}' > temp.energy"
+cmd1 = "upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep percentage | awk '{print $2}' > /home/anirudt/Projects/battery_monitor/temp.energy"
 
 os.system(cmd1)
 
-f = open('temp.energy', 'rb')
+f = open('/home/anirudt/Projects/battery_monitor/temp.energy', 'rb')
 a = f.read()
 b = a[0:a.find('%')+1]
 c = int(a[0:a.find('%')])

@@ -9,7 +9,7 @@ A voice automated battery monitor for your Linux system.
 - Modify the path in the 'cmd2' variable of *fire.py* to the current directory
 - Run the following command:
 ```bash
-sudo crontab -e
+crontab -e
 ```
 - And put the following line at the end:
 ```
