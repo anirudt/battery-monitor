@@ -1,6 +1,10 @@
 #What?
 A voice automated battery monitor for your Linux system.
 
+#Features
+- Intimates you to plug in your charger when the battery goes below 20% [tweakable].
+- Intimates you to unplug your charger once the charge hits 100%.
+
 #Requirements
 - espeak, a voice system of configurable languages and voices.
 - Python27
